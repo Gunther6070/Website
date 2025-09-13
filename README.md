@@ -1,0 +1,7 @@
+-[ ] Home
+-[ ] Project page
+-[ ] Contact page
+-[ ] Resume Page
+-[ ] Navbar
+  - [ ] Blur
+  - [ ] Stylish
