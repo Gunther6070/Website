@@ -3,6 +3,14 @@
 h1 {
     font-size: 50px;
     color: var(--accent2);
+    margin: 0px;
+}
+
+h2 {
+    font-size: 20px;
+    color: var(--accent2);
+    font-family: Satoshi-LightItalic, sans-serif;
+    margin: 10px;
 }
 
 body {
@@ -21,11 +29,17 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    overflow: hidden;
 }
 
 .icon {
     font-size: 15px;
     pointer-events: none;
+}
+
+#titleText {
+    text-align: center;
+    vertical-align: center;
 }
 
 #headerHolder {
@@ -54,5 +68,29 @@ body {
         color: #000000;
         text-decoration: none;
     }
+}
+
+.tunnel {
+    width: 200vmax;
+    height: 200vmax;
+    background: repeating-radial-gradient(
+        circle,
+        #000000,
+        #000000 10px,
+        #3c3c3c 18px,
+        #3c3c3c 20px
+    );
+    animation: zoom 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    z-index: -1;
+}
+
+@keyframes zoom {
+    0%   { transform: translate(-50%, -50%) scale(1); }
+    100% { transform: translate(-50%, -50%) scale(2); }
 }
 
